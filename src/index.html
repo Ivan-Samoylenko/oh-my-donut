@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-    <include src="./partials/trytest.html"></include>
-    <include src="./partials/test.html"></include>
+    <!-- wrapper to place top background image -->
+    <div class="bacground-top">
+      <!-- header of page -->
+      <header class="page-header">
+        <!-- main header menu, contain burger-button -->
+        <include src="./partials/page-header.html"></include>
+        <!-- END of main header menu -->
+
+        <!-- menu for mobile and tablet screens -->
+        <include src="./partials/menu.html"></include>
+        <!-- END of menu for mobile and tablet screens -->
+      </header>
+      <!-- END of header of page -->
+
+      <!-- main content of page -->
+      <!-- section hero -->
+      <include src="./partials/hero.html"></include>
+      <!-- END of section hero -->
+
+      <!-- section about-us -->
+      <include src="./partials/about-us.html"></include>
+      <!-- END of section about-us -->
+    </div>
+    <!-- END of wrapper to place top background image -->
+
+    <!-- section program -->
+    <include src="./partials/program.html"></include>
+    <!-- END of section program -->
+
+    <!-- wrapper to place bottom background image -->
+    <div class="bacground-bottom">
+      <!-- section reviews, contain swiper -->
+      <include src="./partials/reviews.html"></include>
+      <!-- END of section reviews -->
+
+      <!-- section registration -->
+      <include src="./partials/registration.html"></include>
+      <!-- END of section registration -->
+
+      <!-- section contact -->
+      <include src="./partials/contact.html"></include>
+      <!-- END of section contact -->
+      <!-- END of main content of page -->
+
+      <!-- footer of page -->
+      <include src="./partials/page-footer.html"></include>
+      <!-- END of footer of page -->
+    </div>
+    <!-- END of wrapper to place bottom background image -->
+
+    <!-- place for scripts -->
+    <!-- END of place for scripts -->
   </body>
 </html>
