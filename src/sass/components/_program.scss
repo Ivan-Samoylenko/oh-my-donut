@@ -1,0 +1,144 @@
+/*Обнуление стилей*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+input {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Конец Обнуления стилей*/
+
+.program__title {
+  margin-bottom: 8px;
+
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+
+  color: #2e2520;
+}
+
+.program__text {
+  margin-bottom: 8px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #2e2520;
+}
+
+.programm__item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2e2520;
+}
+.programm__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.program__text-more {
+  display: none;
+
+  margin-top: 8px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #2e2520;
+}
+.program__button {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 55px;
+}
+.program__button--less {
+  display: none;
+}
+
+.program__ckeckbox:checked ~ .program__button > .program__button--more {
+  display: none;
+}
+
+.program__ckeckbox:checked ~ .program__text-more {
+  display: block;
+}
+.program__ckeckbox:checked ~ .program__button > .program__button--less {
+  display: inline-block;
+}
+.event {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  gap: 64px 20px;
+}
+.event__item {
+  padding-top: 48px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #fef3e4;
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+  &:nth-child(2n) {
+    position: relative;
+    top: 36px;
+  }
+}
+
+.event__title {
+  font-family: 'Caveat Brush';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.event__info {
+  margin-top: 4px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+
+  text-align: center;
+
+  color: #000000;
+}
