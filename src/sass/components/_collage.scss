@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 130px 130px;
   gap: 64px 20px;
+
+  @media (min-width: 768px) {
+    gap: 50px 33px;
+  }
 }
 .event__item {
   padding-top: 48px;
@@ -13,6 +17,12 @@
   &:nth-child(2n) {
     position: relative;
     top: 36px;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 53px;
+    width: 152px;
+    height: 152px;
   }
 }
 
@@ -37,6 +47,10 @@
   text-align: center;
 
   color: $text-color-second;
+
+  @media (min-width: 768px) {
+    margin-top: 8px;
+  }
 }
 
 .event__svg {
