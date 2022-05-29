@@ -31,8 +31,15 @@
 2.тегу input додати клас hidden-text та атрибут hidden
 3.елементу span, в який обгорнуто слово more, додати клас btn-secondary--more, 
 4.елементу span, в який обгорнуто слово less, додати клас btn-secondary--less
+5. додати в текст, який ховається при нажатті, 2 класи: paragraph, paragraph--shown
 */
+.paragraph {
+  display: none;
+}
 
+.hidden-text:checked ~ .paragraph {
+  display: block;
+}
 .btn-secondary {
   font-family: 'Caveat Brush', sans-serif;
   font-size: 18px;
@@ -67,6 +74,18 @@
 
   .hidden-text:checked ~ & {
     color: $active-color;
+  }
+}
+.hidden-text {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1280px) {
+  .paragraph--shown {
+    display: block;
+  }
+  .btn-secondary {
+    display: none;
   }
 }
 
