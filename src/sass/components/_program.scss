@@ -1,0 +1,42 @@
+.program__title {
+  margin-bottom: 8px;
+
+  font-family: 'Caveat Brush';
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.program__text {
+  margin-bottom: 8px;
+}
+
+.programm__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.program__text-more {
+  display: none;
+
+  margin-top: 8px;
+}
+.program__button {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 55px;
+}
+.program__button--less {
+  display: none;
+}
+
+.program__ckeckbox:checked ~ .program__button > .program__button--more {
+  display: none;
+}
+
+.program__ckeckbox:checked ~ .program__text-more {
+  display: block;
+}
+.program__ckeckbox:checked ~ .program__button > .program__button--less {
+  display: inline-block;
+}
+

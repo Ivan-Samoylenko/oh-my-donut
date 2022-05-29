@@ -1,0 +1,44 @@
+.event {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  gap: 64px 20px;
+}
+.event__item {
+  padding-top: 48px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #fef3e4;
+  box-shadow: $shadow-program-circle;
+  &:nth-child(2n) {
+    position: relative;
+    top: 36px;
+  }
+}
+
+.event__title {
+  font-family: 'Caveat Brush';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+
+  text-align: center;
+
+  color: $text-color-second;
+}
+
+.event__info {
+  margin-top: 4px;
+  margin-bottom: 9px;
+
+  font-size: 14px;
+  line-height: 1.21;
+
+  text-align: center;
+
+  color: $text-color-second;
+}
+
+.event__svg {
+  margin: auto;
+}
