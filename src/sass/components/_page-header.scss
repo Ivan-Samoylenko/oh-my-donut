@@ -17,7 +17,9 @@
     margin-right: 162px;
     padding-top: 37.86px;
   }
-}
+
+  }
+
 .heaer-logo__icon {
   width: 96px;
   height: 44px;
@@ -31,6 +33,7 @@
       width: 156px;
   }
 }
+
 .header-nav {
   display: none;
   @media screen and (min-width: 1280px) {
@@ -57,4 +60,13 @@
   color: $text-color-main;
   display: inline-block;
   padding-top: 58px;
+
+  &:hover,
+  &:focus {
+      color: $hover-color;
+  }
+}
+
+.header-nav__link--current {
+    color: $hover-color;
 }
