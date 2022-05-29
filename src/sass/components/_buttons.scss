@@ -1,0 +1,96 @@
+// Start Стилі для всіх кнопок прямокутної форми
+.btn-primary {
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  background-color: $button-main-bgc;
+  color: $button-main-text-color;
+  min-width: 145px;
+
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}
+// END Стилі для всіх кнопок прямокутної форми
+
+// Start Стилі для кнопки Read more/less.
+
+/*Для того, щоб все працювало потрібно:
+1.Клас .btn-secondary має бути записаним всередині тегу label
+2.тегу input додати клас hidden-text та атрибут hidden
+3.елементу span, в який обгорнуто слово more, додати клас btn-secondary--more, 
+4.елементу span, в який обгорнуто слово less, додати клас btn-secondary--less
+*/
+
+.btn-secondary {
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 18px;
+  line-height: 1.28;
+  color: $button-overflow-text-color;
+  cursor: pointer;
+
+  &--less {
+    display: none;
+  }
+
+  .hidden-text:checked ~ & &--more {
+    display: none;
+  }
+  .hidden-text:checked ~ & &--less {
+    display: inline;
+  }
+
+  &--less:hover,
+  &--less:focus,
+  &--more:hover,
+  &--more:focus,
+  &:hover,
+  &:focus,
+  .hidden-text:checked ~ &:hover,
+  .hidden-text:checked ~ &:focus,
+  .hidden-text:checked ~ & &--less:hover,
+  .hidden-text:checked ~ & &--less:focus {
+    color: $hover-color;
+  }
+
+  .hidden-text:checked ~ & {
+    color: $active-color;
+  }
+}
+
+/*тегу всередині якого знаходиться текст додати .клас-ім'я і вказати:
+.клас-ім'я {
+  display: none;
+}
+
+.hidden-text:checked ~ .клас-ім'я {
+  display: block;
+}
+*/
+
+// END Стилі для кнопки Read more/less та інших необхідних класів
+
+// Start Стилі для іконки бургер-меню
+
+.btn-menu {
+  display: block;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  line-height: 0;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $hover-color;
+  }
+}
