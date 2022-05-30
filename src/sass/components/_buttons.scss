@@ -79,11 +79,15 @@
     display: none;
   }
 
+  &--more {
+    display: inline-block;
+  }
+
   .hidden-text:checked ~ & &--more {
     display: none;
   }
   .hidden-text:checked ~ & &--less {
-    display: inline;
+    display: inline-block;
   }
 
   &--less:hover,
@@ -103,6 +107,7 @@
     color: $active-color;
   }
 }
+
 .hidden-text {
   visibility: hidden;
 }
