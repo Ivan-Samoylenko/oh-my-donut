@@ -1,0 +1,104 @@
+.menu-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: $bgc-menu;
+    backdrop-filter: blur(4px);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2; 
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.opened {
+        opacity: 1;
+        visibility: visible;
+        
+    }
+}
+
+
+
+.menu-container {
+    padding-top: 25px;
+    height: 100%;
+    overflow: auto;
+}
+
+.logo-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    margin-top: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav__item {
+    text-align: center;
+}
+
+.nav__item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.nav__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29/24;
+    color: $button-burger-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+.icon-close-menu {
+    fill: $button-burger-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 4;
+    &:hover,
+    &:focus {
+        .icon-close-menu {
+            fill: $hover-color;
+        }
+    }
+}
+
+.icon-logo-menu {
+    fill: $button-burger-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-menu__link {
+    &:focus, &:hover {
+        .icon-logo-menu {
+            fill: $hover-color;
+        }
+    }
+}
