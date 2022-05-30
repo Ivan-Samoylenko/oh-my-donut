@@ -58,7 +58,7 @@
 }
 
 .hidden-text:checked ~ .paragraph {
-  display: block;
+  // display: block;
   opacity: 1;
   font-size: inherit;
   max-height: 100%;
