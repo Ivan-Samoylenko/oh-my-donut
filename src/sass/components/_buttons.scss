@@ -31,13 +31,13 @@
 }
 // END Стилі для всіх кнопок прямокутної форми
 
-// Start Стилі для кнопки Read more/less.
+// Start Стилі для кнопки Read more/Less.
 
 /*Для того, щоб все працювало потрібно:
 1.Клас .btn-secondary має бути записаним всередині тегу label
 2.тегу input додати клас hidden-text та атрибут hidden
-3.елементу span, в який обгорнуто слово more, додати клас btn-secondary--more, 
-4.елементу span, в який обгорнуто слово less, додати клас btn-secondary--less
+3.елементу span, в який обгорнуто Read more, додати клас btn-secondary--more, 
+4.елементу span, в який обгорнуто слово Less, додати клас btn-secondary--less
 5. додати в текст, який ховається при нажатті, 2 класи: paragraph, paragraph--shown
 */
 .paragraph {
@@ -106,16 +106,6 @@
 .hidden-text {
   visibility: hidden;
 }
-
-/*тегу всередині якого знаходиться текст додати .клас-ім'я і вказати:
-.клас-ім'я {
-  display: none;
-}
-
-.hidden-text:checked ~ .клас-ім'я {
-  display: block;
-}
-*/
 
 // END Стилі для кнопки Read more/less та інших необхідних класів
 
