@@ -1,10 +1,41 @@
-.section-about-us__flex-block {
-  display: block;
+.section-about-us__container {
+  padding-top: 316px;
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 85px;
   }
-  // transform: translateY(-17%);
+}
+
+.section-about-us__info-block::before {
+  content: '';
+  width: 280px;
+  height: 300px;
+  display: block;
+  top: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/src/images/mobile/coffee-donuts.png');
+  @media screen and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('/src/images/tablet/coffee-donuts.png');
+    left: 32px;
+    width: 336px;
+    height: 359px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('/src/images/tablet/coffee-donuts.png');
+    left: 32px;
+    width: 336px;
+    height: 359px;
+  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -31,28 +62,25 @@
   //   transform: translate(-48%, -35%);
   // }
 }
-.section-about-us__pic {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
 
-.section-about-us__pic-wrap {
-  width: 280px;
-  height: 300px;
-  margin: 0 auto;
+// .section-about-us__pic-wrap {
+//   width: 280px;
+//   height: 300px;
+//   margin: 0 auto;
+//   background-image: url('/src/images/mobile/coffee-donuts.png');
+//   background-repeat: no-repeat;
+//   background-size: cover;
 
-  @media screen and (min-width: 768px) {
-    width: 335px;
-    height: 360px;
-  }
+//   @media screen and (min-width: 768px) {
+//     width: 335px;
+//     height: 360px;
+//   }
 
-  @media screen and (min-width: 1280px) {
-    width: 500px;
-    height: 535px;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     width: 500px;
+//     height: 535px;
+//   }
+// }
 // .section-about-us__pic-wrap {
 //   width: 280px;
 //   height: 300px;
@@ -63,6 +91,11 @@
 // }
 
 .section-about-us__info-block {
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2);
+    margin-left: 30px;
+    height: 450px;
+  }
   @media screen and (min-width: 1280px) {
     width: 392px;
     justify-content: space-between;
@@ -70,6 +103,7 @@
 }
 .section-about-us__heading {
   font-family: 'Caveat Brush', sans-serif;
+  color: $text-color-main;
   text-align: center;
   font-size: 24px;
   line-height: 1.25;
@@ -86,7 +120,12 @@
 .section-about-us__text:not(:last-of-type) {
   margin-bottom: 20px;
 }
-.btn-secondary__margin {
-  display: block;
-  margin: 16px 0;
+.section-about-us__paragraph {
+}
+// .btn-secondary__margin {
+//   display: block;
+//   margin: 16px 0;
+// }
+.hidden-text:checked ~ .btn-secondary .btn-secondary--less {
+  margin-top: 16px;
 }
