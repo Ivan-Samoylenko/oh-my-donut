@@ -58,7 +58,7 @@
 }
 
 .program__text-more {
-  display: none;
+  //   display: none;
 
   margin-top: 8px;
 
@@ -70,24 +70,10 @@
   }
 }
 .program__button {
-  display: inline-block;
+  //   display: inline-block;
   margin-top: 16px;
   margin-bottom: 55px;
-  @media (min-width: 1280px) {
-    display: none;
+  @media (min-width: 768px) {
+    margin-bottom: 0;
   }
-}
-.program__button--less {
-  display: none;
-}
-
-.program__ckeckbox:checked ~ .program__button > .program__button--more {
-  display: none;
-}
-
-.program__ckeckbox:checked ~ .program__text-more {
-  display: block;
-}
-.program__ckeckbox:checked ~ .program__button > .program__button--less {
-  display: inline-block;
 }
