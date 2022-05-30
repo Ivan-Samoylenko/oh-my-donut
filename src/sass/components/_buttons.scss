@@ -122,12 +122,16 @@
 // Start Стилі для іконки бургер-меню та закриваючої іконки - використовується один клас .btn-menu
 .btn-menu {
   display: block;
-  padding: 0;
+  padding: 12px 5px;
   border: 0;
   background-color: transparent;
   line-height: 0;
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--close {
+    padding: 11px;
+  }
 
   &:hover,
   &:focus {
