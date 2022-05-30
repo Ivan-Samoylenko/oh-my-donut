@@ -1,0 +1,134 @@
+// Start Стилі для всіх кнопок прямокутної форми
+.btn-primary {
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  background-color: $button-main-bgc;
+  color: $button-main-text-color;
+  min-width: 145px;
+
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 18px;
+  line-height: 1.28;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.25;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    min-width: 158px;
+  }
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}
+// END Стилі для всіх кнопок прямокутної форми
+
+// Start Стилі для кнопки Read more/Less.
+
+/*Для того, щоб все працювало потрібно:
+1.Клас .btn-secondary має бути записаним всередині тегу label
+2.тегу input додати клас hidden-text та атрибут hidden
+3.елементу span, в який обгорнуто Read more, додати клас btn-secondary--more, 
+4.елементу span, в який обгорнуто слово Less, додати клас btn-secondary--less
+5. додати в текст, який ховається при нажатті, 2 класи: paragraph, paragraph--shown
+*/
+.paragraph {
+  // display: none;
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1280px) {
+    &--shown {
+      // display: block;
+      opacity: 1;
+      max-height: 100%;
+      font-size: inherit;
+    }
+  }
+}
+
+.hidden-text:checked ~ .paragraph {
+  // display: block;
+  opacity: 1;
+  font-size: inherit;
+  max-height: 100%;
+}
+.btn-secondary {
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 18px;
+  line-height: 1.28;
+  color: $button-overflow-text-color;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &--less {
+    display: none;
+  }
+
+  .hidden-text:checked ~ & &--more {
+    display: none;
+  }
+  .hidden-text:checked ~ & &--less {
+    display: inline;
+  }
+
+  &--less:hover,
+  &--less:focus,
+  &--more:hover,
+  &--more:focus,
+  &:hover,
+  &:focus,
+  .hidden-text:checked ~ &:hover,
+  .hidden-text:checked ~ &:focus,
+  .hidden-text:checked ~ & &--less:hover,
+  .hidden-text:checked ~ & &--less:focus {
+    color: $hover-color;
+  }
+
+  .hidden-text:checked ~ & {
+    color: $active-color;
+  }
+}
+.hidden-text {
+  visibility: hidden;
+}
+
+// END Стилі для кнопки Read more/less та інших необхідних класів
+
+// Start Стилі для іконки бургер-меню та закриваючої іконки - використовується один клас .btn-menu
+.btn-menu {
+  display: block;
+  padding: 12px 5px;
+  border: 0;
+  background-color: transparent;
+  line-height: 0;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--close {
+    padding: 11px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $hover-color;
+  }
+
+  &:active {
+    fill: $active-color;
+  }
+}
