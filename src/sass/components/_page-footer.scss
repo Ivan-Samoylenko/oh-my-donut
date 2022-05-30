@@ -1,0 +1,43 @@
+.page-footer {
+  background-color: $bgc-main;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item{
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  &__link{
+    color: $text-color-main;
+  }
+  &__map{
+    color: $text-color-main;
+    @media (min-width: 768px){
+      margin-right: 61px;
+    }
+    @media (min-width: 1280px){
+      margin-right: 197px;
+    }
+  }
+  &__link:hover, &__link:focus{
+    color: $hover-color;
+  }
+  &__icon{
+    display: inline-block;
+    margin-right: 4px;
+    fill: currentColor;
+  }
+}
+
+
+
+
+
+
+
+
