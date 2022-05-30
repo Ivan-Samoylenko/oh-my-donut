@@ -64,6 +64,7 @@
   max-height: 100%;
 }
 .btn-secondary {
+  display: inline-block;
   font-family: 'Caveat Brush', sans-serif;
   font-size: 18px;
   line-height: 1.28;
@@ -79,11 +80,15 @@
     display: none;
   }
 
+  &--more {
+    display: inline-block;
+  }
+
   .hidden-text:checked ~ & &--more {
     display: none;
   }
   .hidden-text:checked ~ & &--less {
-    display: inline;
+    display: inline-block;
   }
 
   &--less:hover,
@@ -103,6 +108,7 @@
     color: $active-color;
   }
 }
+
 .hidden-text {
   visibility: hidden;
 }
