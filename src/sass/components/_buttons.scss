@@ -83,7 +83,7 @@
     display: none;
   }
   .hidden-text:checked ~ & &--less {
-    display: inline;
+    display: inline-block;
   }
 
   &--less:hover,
