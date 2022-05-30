@@ -8,8 +8,8 @@
   min-width: 145px;
 
   font-family: 'Caveat Brush', sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
+  font-size: 18px;
+  line-height: 1.28;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -17,6 +17,13 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.25;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    min-width: 158px;
+  }
   &:hover,
   &:focus {
     background-color: $hover-color;
@@ -34,11 +41,27 @@
 5. додати в текст, який ховається при нажатті, 2 класи: paragraph, paragraph--shown
 */
 .paragraph {
-  display: none;
+  // display: none;
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1280px) {
+    &--shown {
+      // display: block;
+      opacity: 1;
+      max-height: 100%;
+      font-size: inherit;
+    }
+  }
 }
 
 .hidden-text:checked ~ .paragraph {
   display: block;
+  opacity: 1;
+  font-size: inherit;
+  max-height: 100%;
 }
 .btn-secondary {
   font-family: 'Caveat Brush', sans-serif;
@@ -47,6 +70,10 @@
   color: $button-overflow-text-color;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 
   &--less {
     display: none;
@@ -78,15 +105,6 @@
 }
 .hidden-text {
   visibility: hidden;
-}
-
-@media screen and (min-width: 1280px) {
-  .paragraph--shown {
-    display: block;
-  }
-  .btn-secondary {
-    display: none;
-  }
 }
 
 /*тегу всередині якого знаходиться текст додати .клас-ім'я і вказати:
