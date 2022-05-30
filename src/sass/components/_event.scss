@@ -1,0 +1,106 @@
+.event {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  gap: 64px 20px;
+
+  @media (min-width: 768px) {
+    gap: 50px 33px;
+  }
+  @media (min-width: 1280px) {
+    gap: 80px 140px;
+  }
+}
+.event__item {
+  position: relative;
+
+  padding-top: 48px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #fef3e4;
+  box-shadow: $shadow-program-circle;
+
+  &:nth-child(2n) {
+    position: relative;
+    top: 36px;
+
+    @media (min-width: 768px) {
+      top: 50px;
+    }
+
+    @media (min-width: 1280px) {
+      top: 128px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 53px;
+    width: 152px;
+    height: 152px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 65px;
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.event_img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+
+  transform: translate(-50%, -50%);
+}
+
+.event__title {
+  font-family: 'Caveat Brush';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+
+  text-align: center;
+
+  color: $text-color-second;
+
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+.event__info {
+  margin-top: 4px;
+  margin-bottom: 9px;
+
+  font-size: 14px;
+  line-height: 1.21;
+
+  text-align: center;
+
+  color: $text-color-second;
+
+  @media (min-width: 768px) {
+    margin-top: 8px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 1.25;
+  }
+}
+
+.event__svg {
+  margin: auto;
+  @media (min-width: 768px) {
+    width: 21px;
+    height: 21px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 25px;
+    height: 25px;
+  }
+}
