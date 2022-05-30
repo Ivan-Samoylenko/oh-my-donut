@@ -79,6 +79,10 @@
     display: none;
   }
 
+  &--more {
+    display: inline-block;
+  }
+
   .hidden-text:checked ~ & &--more {
     display: none;
   }
@@ -103,6 +107,7 @@
     color: $active-color;
   }
 }
+
 .hidden-text {
   visibility: hidden;
 }
