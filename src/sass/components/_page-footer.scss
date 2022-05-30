@@ -1,43 +1,65 @@
 .page-footer {
-  background-color: $bgc-main;
-  &__list{
+  padding-bottom: 20px;
+  &__address {
+    position: relative;
+  }
+  &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__item{
-    
+  &__item {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
+    z-index: 10;
   }
-  &__link{
+  &__link {
     color: $text-color-main;
   }
-  &__map{
+  &__map {
     color: $text-color-main;
-    @media (min-width: 768px){
-      margin-right: 61px;
+
+    @media (min-width: 768px) {
+      // змінити відповідно до кінцевого фото
+      margin-right: 91px;
     }
-    @media (min-width: 1280px){
-      margin-right: 197px;
+    @media (min-width: 1280px) {
+      margin-right: 193px;
     }
   }
-  &__link:hover, &__link:focus{
+  &__link:hover,
+  &__link:focus,
+  &__map:hover,
+  &__map:focus {
     color: $hover-color;
   }
-  &__icon{
+  &__icon {
     display: inline-block;
     margin-right: 4px;
     fill: currentColor;
   }
 }
+.page-footer__address::after {
+  display: block;
+  position: absolute;
+  content: url(../images/mobile/flour.png);
+  width: 113px;
+  height: auto;
+  bottom: -20px;
+  right: -29px;
+  @media (min-width: 768px) {
+    content: url(../images/tablet/flour.png);
+    width: 207px;
+    height: auto;
+    right: -23px;
 
-
-
-
-
-
-
-
+  }
+  @media (min-width: 1280px) {
+    content: url(../images/desctop/flour.png);
+    width: 355px;
+    height: auto;
+    right: -52;
+  }
+}
