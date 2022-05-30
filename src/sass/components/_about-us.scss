@@ -1,0 +1,48 @@
+.section-about-us__flex-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translateY(-17%);
+}
+
+@media screen and (max-width: 1279px) {
+  .section-about-us__spoon-wrap {
+    display: none;
+  }
+  .section-about-us__spoon-img {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-about-us__container {
+    position: relative;
+  }
+  .section-about-us__spoon-wrap {
+    position: absolute;
+    height: 420px;
+    width: 230px;
+  }
+  .section-about-us__spoon-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: translate(-48%, -35%);
+  }
+}
+
+.section-about-us__pic-wrap {
+  width: 502px;
+  height: 536px;
+  background-color: green;
+}
+
+.section-about-us__info-block {
+  width: 392px;
+  margin-left: 140px;
+}
+.section-about-us__heading {
+  margin-bottom: 10px;
+}
+.section-about-us__text {
+  margin-bottom: 16px;
+}
