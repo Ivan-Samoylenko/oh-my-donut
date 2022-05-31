@@ -32,22 +32,3 @@
     margin: 0 auto 32px;
   }
 }
-.social{
-  display: flex;
-  justify-content: center;
-
-  &__item:not(:last-child) {
-    margin-right: 16px;
-  }
-  &__link {
-    color: $icon-color-social;
-  }
-  &__link:hover, &__link:focus{
-    color: $hover-color;
-  }
-  &__icon {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
-  }
-}
