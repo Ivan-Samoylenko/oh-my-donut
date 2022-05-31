@@ -1,12 +1,28 @@
 .subscribe {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__title {
+        margin-bottom: 20px;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
         color: $form-text-title;
+    }
+
+    &__label {
+        margin-bottom: 15px;
+    }
+
+    &__label:last-child {
+        margin-bottom: 0;
+    }
+
+    &__input {
+        border: 1px $color-form-input;
     }
 }
