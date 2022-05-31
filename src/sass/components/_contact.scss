@@ -1,6 +1,15 @@
 .contact-section{
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
+    @media (min-width: 768px){
+      padding-top: 39px;
+      padding-bottom: 59px;
+    }
+    @media (min-width: 1280px){
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
   &__header{
     font-family: 'Caveat Brush';
     font-size: 24px;
@@ -18,17 +27,26 @@
 
   }
   &__text{
-    line-height: 1.25;
     text-align: center;
     margin-bottom: 16px;
 
-        @media (min-width: 1280px){
-          font-size: 18px;
-          line-height: 1.22;
-        }
+      @media (min-width: 1280px){
+        font-size: 18px;
+        line-height: 1.22;
+      }
+  }
+  &__input-box{
+    margin-bottom: 32px;
+      @media (min-width: 1280px){
+        margin-bottom: 20px;
+      }
   }
   &__btn{
     display: block;
     margin: 0 auto 32px;
+      
+      @media (min-width: 1280px){
+        margin: 0 auto 24px;
+      }
   }
 }
