@@ -1,99 +1,33 @@
 .background-top {
-  position: relative;
-
-  &::before {
-    content: '';
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: 100% auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -100;
-    background-image: url('/src/images/svg-images/bg-top-mobile.svg');
-  }
+  background-image: url('/src/images/svg-images/bg-top-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100% 460px;
 
   @media screen and (min-width: 768px) {
-    &::before {
-      content: '';
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-size: 100% auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: -100;
-      background-image: url('/src/images/svg-images/bg-top-tablet.svg');
-    }
+    background-image: url('/src/images/svg-images/bg-top-tablet.svg');
+    background-size: 100% 622px;
   }
 
   @media screen and (min-width: 1280px) {
-    &::before {
-      content: '';
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-size: 100% auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: -100;
-      background-image: url('/src/images/svg-images/bg-top-desktop.svg');
-    }
+    background-image: url('/src/images/svg-images/bg-top-desktop.svg');
+    background-size: 100% 1035px;
   }
 }
 
 .background-bottom {
-  position: relative;
-
-  &::before {
-    content: '';
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: 100% auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -100;
-    background-image: url('/src/images/svg-images/bg-bottom-mobile.svg');
-  }
+  background-image: url('/src/images/svg-images/bg-bottom-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center top 0;
+  background-size: 100% 1337px;
 
   @media screen and (min-width: 768px) {
-    &::before {
-      content: '';
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-size: 100% auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: -100;
-      background-image: url('/src/images/svg-images/bg-bottom-tablet.svg');
-    }
+    background-image: url('/src/images/svg-images/bg-bottom-tablet.svg');
+    background-size: 100% 1519px;
   }
 
   @media screen and (min-width: 1280px) {
-    &::before {
-      content: '';
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-size: 100% auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: -100;
-      background-image: url('/src/images/svg-images/bg-bottom-desktop.svg');
-    }
+    background-image: url('/src/images/svg-images/bg-bottom-desktop.svg');
+    background-size: 100% 2073px;
   }
 }
