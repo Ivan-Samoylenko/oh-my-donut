@@ -1,58 +1,59 @@
-.header {
+.site-page-header {
   display: flex;
   justify-content: center;
+  position: relative;
+  // overflow-x: hidden;
   @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: flex-start;
   }
 }
 
-.header-logo {
+.page-header-logo {
   padding-top: 8px;
   @media screen and (min-width: 768px) {
     margin-right: auto;
-    padding-top: 35.58px;
+    padding-top: 36px;
   }
   @media screen and (min-width: 1280px) {
     margin-right: 162px;
-    padding-top: 37.86px;
+    padding-top: 38px;
   }
-
-  }
+}
 
 .heaer-logo__icon {
   width: 96px;
   height: 44px;
   margin: 0;
 
-  @media screen and (min-width:768px) {
-      height: 47.8px;
+  @media screen and (min-width: 768px) {
+    height: 48px;
   }
-  @media screen and (min-width:1280px) {
-      height: 81.46px;
-      width: 156px;
+  @media screen and (min-width: 1280px) {
+    height: 81px;
+    width: 156px;
   }
 }
 
-.header-nav {
+.page-header-nav {
   display: none;
   @media screen and (min-width: 1280px) {
     display: flex;
   }
 }
-.header-nav__list {
+.page-header-nav__list {
   display: flex;
   text-decoration: none;
   list-style: none;
 }
-.header-nav__item {
+.page-header-nav__item {
   @media screen and (min-width: 1280px) {
     &:not(:last-child) {
       margin-right: 20px;
     }
   }
 }
-.header-nav__link {
+.page-header-nav__link {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
@@ -63,10 +64,89 @@
 
   &:hover,
   &:focus {
-      color: $hover-color;
+    color: $hover-color;
   }
 }
 
-.header-nav__link--current {
-    color: $hover-color;
+.page-header-nav__link--current {
+  color: $hover-color;
 }
+
+.burger-menu {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  padding: 0;
+  fill: $button-burger-color;
+
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.burger-menu__icon {
+  width: 30px;
+  height: 16px;
+}
+
+.site-page-header::before {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    content: '';
+    background: url('../images/mobile/donuts.png');
+    width: 129px;
+    height: 164px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0;
+    left: -12px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    content: '';
+    background: url('../images/tablet/donuts.png');
+    position: absolute;
+    width: 378px;
+    height: 396px;
+    top: 0;
+    left: 289px;
+    background-repeat: no-repeat;
+  }
+
+  // @media screen and (min-width:1280px) {
+  //   position: absolute;
+  //   content: url('../images/desctop/donuts.png');
+  //   width: 793px;
+  //   height: 831px;
+  //   top: 0;
+  //   right: -90px;
+  //   left: 700px;
+  //   z-index: -1;
+  //   // background-repeat: no-repeat;
+  // }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    content: '';
+    background: url('../images/desctop/donuts.png');
+    width: 793px;
+    height: 831px;
+    top: 0;
+    right: -150px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    
+  }
+}
+
+// .page-header__img {
+
+//   @media screen and (max-width:1279px) {
+//     display: none;
+//   }
+// }
