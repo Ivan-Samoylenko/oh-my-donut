@@ -5,8 +5,8 @@
     display: flex;
     justify-content: end;
     padding-top: 0;
-    height: 440px;
-    margin-bottom: 77px;
+    height: 355px;
+    margin-bottom: 70px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -60,11 +60,9 @@
   @media screen and (min-width: 768px) {
     width: calc(100% / 2);
     margin-left: 23px;
-    height: 450px;
   }
   @media screen and (min-width: 1280px) {
     width: 374px;
-    height: 392px;
     margin-left: 140px;
     justify-content: space-between;
   }
