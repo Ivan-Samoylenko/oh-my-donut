@@ -1,20 +1,18 @@
 .background-top {
   position: relative;
 
-  @media screen and (min-width: 320px) {
-    &::before {
-      content: '';
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-size: 100% auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: -1;
-      background-image: url('/src/images/svg-images/bg-top-mobile.svg');
-    }
+  &::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+    background-image: url('/src/images/svg-images/bg-top-mobile.svg');
   }
 
   @media screen and (min-width: 768px) {
@@ -28,7 +26,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      z-index: -1;
+      z-index: -100;
       background-image: url('/src/images/svg-images/bg-top-tablet.svg');
     }
   }
@@ -44,7 +42,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      z-index: -1;
+      z-index: -100;
       background-image: url('/src/images/svg-images/bg-top-desktop.svg');
     }
   }
@@ -53,20 +51,18 @@
 .background-bottom {
   position: relative;
 
-  @media screen and (min-width: 320px) {
-    &::before {
-      content: '';
-      background-repeat: no-repeat;
-      background-position-x: center;
-      background-size: 100% auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: -1;
-      background-image: url('/src/images/svg-images/bg-bottom-mobile.svg');
-    }
+  &::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+    background-image: url('/src/images/svg-images/bg-bottom-mobile.svg');
   }
 
   @media screen and (min-width: 768px) {
@@ -80,7 +76,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      z-index: -1;
+      z-index: -100;
       background-image: url('/src/images/svg-images/bg-bottom-tablet.svg');
     }
   }
@@ -96,7 +92,7 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      z-index: -1;
+      z-index: -100;
       background-image: url('/src/images/svg-images/bg-bottom-desktop.svg');
     }
   }
