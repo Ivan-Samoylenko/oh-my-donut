@@ -5,7 +5,13 @@
     justify-content: end;
     position: relative;
     padding-top: 0;
-    padding-bottom: 85px;
+    height: 440px;
+    margin-bottom: 77px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 540px;
+    margin-bottom: 20px;
   }
 }
 
@@ -26,34 +32,32 @@
 
   @media screen and (min-width: 768px) {
     background-image: url('/src/images/tablet/coffee-donuts.png');
-    left: 32px;
+    left: 25px;
     width: 336px;
     height: 359px;
   }
   @media screen and (min-width: 1280px) {
     background-image: url('/src/images/tablet/coffee-donuts.png');
-    left: 32px;
-    width: 336px;
-    height: 359px;
+    left: 122px;
+    width: 502px;
+    height: 536px;
   }
 }
 
-@media screen and (max-width: 1279px) {
-  .section-about-us__spoon-wrap {
-    display: none;
-  }
-  .section-about-us__spoon-img {
-    display: none;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section-about-us__container {
-    position: relative;
-  }
-  .section-about-us__spoon-wrap {
+.section-about-us__container::before {
+  @media screen and (min-width: 1280px) {
+    content: '';
     position: absolute;
-    height: 420px;
-    width: 230px;
+    top: -14%;
+    left: -8%;
+    background-image: url('/src/images/desctop/spoon.png');
+    height: 412px;
+    width: 249px;
+    // .section-about-us__spoon-wrap {
+    //   position: absolute;
+    //   height: 420px;
+    //   width: 230px;
+    // }
   }
   // .section-about-us__spoon-img {
   //   height: 100%;
@@ -93,11 +97,13 @@
 .section-about-us__info-block {
   @media screen and (min-width: 768px) {
     width: calc(100% / 2);
-    margin-left: 30px;
+    margin-left: 23px;
     height: 450px;
   }
   @media screen and (min-width: 1280px) {
-    width: 392px;
+    width: 374px;
+    height: 392px;
+    margin-left: 140px;
     justify-content: space-between;
   }
 }
