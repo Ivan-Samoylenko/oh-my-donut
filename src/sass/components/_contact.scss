@@ -1,0 +1,53 @@
+.contact-section{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  &__header{
+    font-family: 'Caveat Brush';
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    color: $text-color-main;
+    margin-bottom: 16px;
+
+      @media (min-width: 768px){
+        margin-bottom: 20px;
+      }
+      @media (min-width: 1280px){
+        font-size: 36px;
+      }
+
+  }
+  &__text{
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 16px;
+
+        @media (min-width: 1280px){
+          font-size: 18px;
+          line-height: 1.22;
+        }
+  }
+  &__btn{
+    display: block;
+    margin: 0 auto 32px;
+  }
+}
+.social{
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
+  &__link {
+    color: $icon-color-social;
+  }
+  &__link:hover, &__link:focus{
+    color: $hover-color;
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+}
