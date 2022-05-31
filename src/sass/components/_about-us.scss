@@ -1,0 +1,92 @@
+.section-about-us__container {
+  position: relative;
+  padding-top: 316px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: end;
+    padding-top: 0;
+    height: 355px;
+    margin-bottom: 70px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 540px;
+    margin-bottom: 20px;
+  }
+}
+
+.section-about-us__info-block::before {
+  content: '';
+  width: 280px;
+  height: 300px;
+  display: block;
+  top: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/src/images/mobile/coffee-donuts.png');
+  @media screen and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('/src/images/tablet/coffee-donuts.png');
+    left: 25px;
+    width: 336px;
+    height: 359px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('/src/images/tablet/coffee-donuts.png');
+    left: 122px;
+    width: 502px;
+    height: 536px;
+  }
+}
+
+.section-about-us__container::before {
+  @media screen and (min-width: 1280px) {
+    content: '';
+    position: absolute;
+    top: -14%;
+    left: -8%;
+    background-image: url('/src/images/desktop/spoon.png');
+    height: 412px;
+    width: 249px;
+  }
+}
+
+.section-about-us__info-block {
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2);
+    margin-left: 23px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 374px;
+    margin-left: 140px;
+    justify-content: space-between;
+  }
+}
+.section-about-us__heading {
+  font-family: 'Caveat Brush', sans-serif;
+  color: $text-color-main;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.81;
+  }
+}
+.section-about-us__text:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.hidden-text:checked ~ .btn-secondary .btn-secondary--less {
+  margin-top: 16px;
+}
