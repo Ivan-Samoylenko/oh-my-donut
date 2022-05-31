@@ -1,34 +1,31 @@
 .page-footer {
   padding-bottom: 20px;
+  overflow: hidden;
   &__address {
     position: relative;
   }
   &__list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   &__item {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
     z-index: 10;
+  }
+  &__item:last-child{
+      margin-left: auto;
+       @media (min-width: 768px) {
+         margin-left: 468px;
+    }
+      @media (min-width: 1280px) {
+        margin-left: 620px;
+    }
   }
   &__link {
     color: $text-color-main;
   }
-  &__map {
-    color: $text-color-main;
-
-    @media (min-width: 768px) {
-      // змінити відповідно до кінцевого фото
-      margin-right: 91px;
-    }
-    @media (min-width: 1280px) {
-      margin-right: 193px;
-    }
-  }
+ 
   &__link:hover,
   &__link:focus,
   &__map:hover,
@@ -43,6 +40,7 @@
 }
 .page-footer__address::after {
   display: block;
+  font-size: 0;
   position: absolute;
   content: url(../images/mobile/flour.png);
   width: 113px;
@@ -52,9 +50,8 @@
   @media (min-width: 768px) {
     content: url(../images/tablet/flour.png);
     width: 207px;
-    height: auto;
+    height: 119px;
     right: -23px;
-
   }
   @media (min-width: 1280px) {
     content: url(../images/desctop/flour.png);
