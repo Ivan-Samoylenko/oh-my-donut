@@ -13,7 +13,6 @@
   &__header{
     font-family: 'Caveat Brush';
     font-size: 24px;
-    line-height: 1.25;
     text-align: center;
     color: $text-color-main;
     margin-bottom: 16px;
@@ -30,10 +29,6 @@
     text-align: center;
     margin-bottom: 16px;
 
-      @media (min-width: 1280px){
-        font-size: 18px;
-        line-height: 1.22;
-      }
   }
   &__input-box{
     margin-bottom: 32px;
