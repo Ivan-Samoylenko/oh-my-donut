@@ -3,11 +3,10 @@
   padding-bottom: 32px;
     @media (min-width: 768px){
       padding-top: 39px;
-      padding-bottom: 59px;
     }
     @media (min-width: 1280px){
       padding-top: 80px;
-      padding-bottom: 80px;
+      padding-bottom: 24px;
     }
 
   &__header{
@@ -38,10 +37,6 @@
   }
   &__btn{
     display: block;
-    margin: 0 auto 32px;
-      
-      @media (min-width: 1280px){
-        margin: 0 auto 24px;
-      }
+    margin: 0 auto;
   }
 }
