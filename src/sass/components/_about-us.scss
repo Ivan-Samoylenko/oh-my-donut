@@ -1,9 +1,9 @@
 .section-about-us__container {
+  position: relative;
   padding-top: 316px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: end;
-    position: relative;
     padding-top: 0;
     height: 440px;
     margin-bottom: 77px;
