@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OH MY DONUT</title>
     <link rel="icon" href="./images/favicon/favicon.ico" />
-    <link rel="icon" sizes="16x16 32x32 64x64" href="./images/favicon/favicon.ico"">
+    <link rel="icon" sizes="16x16 32x32 64x64"
+    href="./images/favicon/favicon.ico"">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,8 +19,8 @@
 
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <!-- wrapper to place top background image -->
-    <div class="background-top">
+    <!-- wrapper to place background -->
+    <div class="background">
       <!-- header of page -->
       <header class="page-header">
         <!-- main header menu, contain burger-button -->
@@ -33,40 +34,38 @@
       <!-- END of header of page -->
 
       <!-- main content of page -->
-      <!-- section hero -->
-      <include src="./partials/hero.html"></include>
-      <!-- END of section hero -->
+      <main>
+        <!-- section hero -->
+        <include src="./partials/hero.html"></include>
+        <!-- END of section hero -->
 
-      <!-- section about-us -->
-      <include src="./partials/about-us.html"></include>
-      <!-- END of section about-us -->
-    </div>
-    <!-- END of wrapper to place top background image -->
+        <!-- section about-us -->
+        <include src="./partials/about-us.html"></include>
+        <!-- END of section about-us -->
 
-    <!-- section program -->
-    <include src="./partials/program.html"></include>
-    <!-- END of section program -->
+        <!-- section program -->
+        <include src="./partials/program.html"></include>
+        <!-- END of section program -->
 
-    <!-- wrapper to place bottom background image -->
-    <div class="background-bottom">
-      <!-- section reviews, contain swiper -->
-      <include src="./partials/reviews.html"></include>
-      <!-- END of section reviews -->
+        <!-- section reviews, contain swiper -->
+        <include src="./partials/reviews.html"></include>
+        <!-- END of section reviews -->
 
-      <!-- section registration -->
-      <include src="./partials/registration.html"></include>
-      <!-- END of section registration -->
+        <!-- section registration -->
+        <include src="./partials/registration.html"></include>
+        <!-- END of section registration -->
 
-      <!-- section contact -->
-      <include src="./partials/contact.html"></include>
-      <!-- END of section contact -->
+        <!-- section contact -->
+        <include src="./partials/contact.html"></include>
+        <!-- END of section contact -->
+      </main>
       <!-- END of main content of page -->
 
       <!-- footer of page -->
       <include src="./partials/page-footer.html"></include>
       <!-- END of footer of page -->
     </div>
-    <!-- END of wrapper to place bottom background image -->
+    <!-- END of wrapper to place background image -->
 
     <!-- place for scripts -->
     <!-- END of place for scripts -->
