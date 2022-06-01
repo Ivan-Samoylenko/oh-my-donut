@@ -1,43 +1,28 @@
-.background-top {
-  background-image: url('/src/images/svg-images/bg-top-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: 100% 460px;
+.background {
+  overflow: hidden;
+  position: relative;
+  z-index: -20;
+  background-image: url('/src/images/svg-images/bg-top-mobile.svg'),
+    url('/src/images/svg-images/bg-bottom-mobile.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 0, center bottom 181px;
+  background-size: 100% 460px, 100% 1337px;
 
   @media screen and (min-width: 768px) {
-    background-image: url('/src/images/svg-images/bg-top-tablet.svg');
-    background-size: 100% 622px;
+    background-image: url('/src/images/svg-images/bg-top-tablet.svg'),
+      url('/src/images/svg-images/bg-bottom-tablet.svg');
+    background-size: 100% 622px, 100% 1519px;
+    background-position: center 0, center bottom 249px;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url('/src/images/svg-images/bg-top-desktop.svg');
-    background-size: 100% 1035px;
+    background-image: url('/src/images/svg-images/bg-top-desktop.svg'),
+      url('/src/images/svg-images/bg-bottom-desktop.svg');
+    background-size: 100% 1035px, 100% 2073px;
+    background-position: center 0, center bottom 0;
   }
 
   @media screen and (min-width: 1600px) {
-    background-image: url('/src/images/svg-images/bg-top-desktop.svg');
-    background-size: 1600px 1035px;
-  }
-}
-
-.background-bottom {
-  background-image: url('/src/images/svg-images/bg-bottom-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: center top 0;
-  background-size: 100% 1337px;
-
-  @media screen and (min-width: 768px) {
-    background-image: url('/src/images/svg-images/bg-bottom-tablet.svg');
-    background-size: 100% 1519px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-image: url('/src/images/svg-images/bg-bottom-desktop.svg');
-    background-size: 100% 2073px;
-  }
-
-  @media screen and (min-width: 1600px) {
-    background-image: url('/src/images/svg-images/bg-bottom-desktop.svg');
-    background-size: 1600px 2073px;
+    background-size: 1600px 1035px, 1600px 2073px;
   }
 }
