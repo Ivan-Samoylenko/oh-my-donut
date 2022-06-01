@@ -1,0 +1,186 @@
+
+.site-page-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  // z-index: 1;
+  // overflow-x: hidden;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.page-header-logo {
+  padding-top: 8px;
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    padding-top: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 162px;
+    padding-top: 38px;
+  }
+}
+
+.heaer-logo__icon {
+  width: 96px;
+  height: 44px;
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    height: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 81px;
+    width: 156px;
+  }
+}
+
+.page-header-nav {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+.page-header-nav__list {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+.page-header-nav__item {
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+.page-header-nav__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration: none;
+  color: $text-color-main;
+  display: inline-block;
+  padding-top: 58px;
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+  }
+}
+
+.page-header-nav__link--current {
+  color: $hover-color;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  padding: 0;
+  fill: $button-burger-color;
+
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.burger-menu__icon {
+  width: 30px;
+  height: 16px;
+}
+
+.site-page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: block;
+  width: 132px;
+  height: 114px;
+  font-size: 0;
+  background-image: url('../images/mobile/donuts.png');
+  background-size: 132px 114px;
+  z-index: -1;
+  // For retina 2x
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/donuts@2x.png);
+  }
+  // For retina 3x
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/donuts@3x.png);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 380px;
+    height: 361px;
+    top: 0;
+    left: 289px;
+    background-image: url('../images/tablet/donuts.png');
+    background-size: 380px 361px;
+
+    // For retina 2x
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/donuts@2x.png);
+    }
+    // For retina 3x
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/tablet/donuts@3x.png);
+    }
+  }
+
+  // @media screen and (min-width:1280px) {
+  //   position: absolute;
+  //   content: url('../images/desctop/donuts.png');
+  //   width: 793px;
+  //   height: 831px;
+  //   top: 0;
+  //   right: -90px;
+  //   left: 700px;
+  //   z-index: -1;
+  //   // background-repeat: no-repeat;
+  // }
+
+  @media screen and (min-width: 1280px) {
+    width: 795px;
+    height: 661px;
+    top: 0;
+    // right: -150px;
+    left: 620px;
+    background-image: url('../images/desktop/donuts.png');
+    background-size: 795px 661px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/donuts@2x.png);
+    }
+    // For retina 3x
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/desktop/donuts@3x.png);
+    }
+  }
+}
+
