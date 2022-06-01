@@ -1,0 +1,93 @@
+.hero {
+  padding-top: 31px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 15.6px;
+    text-align: left;
+    align-items: flex-start;
+    padding-bottom: 90px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 19px;
+    padding-top: 42px;
+    padding-bottom: 154px;
+  }
+}
+
+.hero__title {
+  display: inline-block;
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  max-width: 224px;
+  text-align: center;
+  padding: 0;
+
+  margin-bottom: 8px;
+  color: $text-color-main;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
+}
+
+.hero__text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+
+  max-width: 224px;
+  width: 100%;
+
+  margin-bottom: 32px;
+  color: $text-color-main;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__button {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.27;
+  max-width: 158px;
+  color: $button-main-text-color;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
+}
+
+.social--header {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    justify-content: left;
+  }
+}
