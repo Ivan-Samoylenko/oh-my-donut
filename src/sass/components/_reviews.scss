@@ -91,6 +91,9 @@
     svg {
         fill: transparent;
     }
+    svg:not(:last-child) {
+        margin-right: 4px;
+    }
 }
 
 .reviews__main {
@@ -135,6 +138,8 @@
     margin-top: 8px;
     font-size: 16px;
     line-height: calc(20 / 16);
+    height: 90px;
+    overflow: auto;
     @media screen and (min-width: 1280px){
         margin-top: 20px;
         font-size: 18px;
