@@ -1,6 +1,7 @@
 .section-about-us__container {
   position: relative;
   padding-top: 316px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: end;
@@ -23,6 +24,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('/src/images/mobile/coffee-donuts.png');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('/src/images/mobile/coffee-donuts1@2x.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url('/src/images/mobile/coffee-donuts@3x.png');
+  }
+
   @media screen and (max-width: 767px) {
     left: 50%;
     transform: translateX(-50%);
@@ -33,12 +47,36 @@
     left: 25px;
     width: 336px;
     height: 359px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/src/images/tablet/coffee-donuts@2x.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('/src/images/tablet/coffee-donuts@3x.png');
+    }
   }
   @media screen and (min-width: 1280px) {
-    background-image: url('/src/images/tablet/coffee-donuts.png');
     left: 122px;
     width: 502px;
     height: 536px;
+    background-image: url('/src/images/tablet/coffee-donuts.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/src/images/desktop/coffee-donuts@2x.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('/src/images/desktop/coffee-donuts@3x.png');
+    }
   }
 }
 
@@ -48,9 +86,23 @@
     position: absolute;
     top: -14%;
     left: -8%;
-    background-image: url('/src/images/desktop/spoon.png');
-    height: 412px;
     width: 249px;
+    height: 412px;
+    background-repeat: no-repeat;
+    background-size: 249px 412px;
+    background-image: url('/src/images/desktop/spoon.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/src/images/desktop/spoon@2x.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('/src/images/desktop/spoon@3x.png');
+    }
   }
 }
 
