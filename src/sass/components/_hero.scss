@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 30.72px;
+  padding-top: 31px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -13,12 +13,12 @@
 
   @media screen and (min-width: 1280px) {
     padding-left: 19px;
-    padding-top: 41.68px;
+    padding-top: 42px;
   }
 }
 
 .hero__title {
-  display: inline;
+  display: inline-block;
   font-family: 'Caveat Brush';
   font-style: normal;
   font-weight: 400;
@@ -37,7 +37,9 @@
 }
 
 .hero__text {
-  display: inline;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 500;
   font-size: 16px;
@@ -45,13 +47,15 @@
 
   max-width: 224px;
   width: 100%;
-  margin-left: 0;
+  
 
   margin-bottom: 32px;
   color: $text-color-main;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: 0;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
@@ -73,5 +77,13 @@
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
+  }
+}
+
+
+.social {
+  @media screen and (min-width:768px) {
+    justify-content: left;
+    
   }
 }
