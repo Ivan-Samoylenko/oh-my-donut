@@ -1,3 +1,39 @@
+.registration {
+  z-index: 1;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px){
+    padding-bottom: 97px;
+    padding-top: 97px;
+  }
+}
+.registration__title {
+  font-family: 'Caveat Brush';
+  font-size: 24px;
+  line-height: 65px;
+  color: $text-color-main;
+  text-align: center;
+  font-weight: 400;
+  @media screen and (min-width: 768px){
+  margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1280px){
+    margin-bottom: 16px;
+    font-size: 36px;
+  }
+  }
+  .registration__title-desktop {
+    display: none;
+    @media screen and (min-width: 768px){
+      display: block;
+    }
+  }
+  .registration__title-mobile {
+   @media screen and (min-width: 768px){
+     display: none;
+   }
+  }
 .registration__field { 
   position: relative;
   background-color: $bgc-desktop-main;
@@ -39,8 +75,8 @@
     }
     &::after {
       position: absolute;
-      bottom: -138px;
-      right: -128px;
+      bottom: -131px;
+      right: -96px;
       font-size: 0;
       width: 307px;
       height: 374px;
@@ -91,7 +127,7 @@
     &::after {
       position: absolute;
       bottom: -297px; 
-      right: -189px;
+      right: -200px;
       font-size: 0;
       width: 532px;
       height: 589px;
@@ -114,46 +150,49 @@
     }
   }
   }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-}
-.registration {
-  z-index: 1;
-  position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  @media screen and (min-width: 768px){
-    padding-bottom: 97px;
-    padding-top: 97px;
+  .registration__wrap {
+    padding-bottom: 32px;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
-}
-.registration__title {
-font-family: 'Caveat Brush';
-font-size: 24px;
-line-height: 65px;
-color: $text-color-main;
-text-align: center;
-font-weight: 400;
-@media screen and (min-width: 768px){
-margin-bottom: 8px;
-}
-@media screen and (min-width: 1280px){
-  margin-bottom: 16px;
-  font-size: 36px;
-}
-}
-.registration__title-desktop {
-  display: none;
-  @media screen and (min-width: 768px){
-    display: block;
+    @media screen and (min-width: 1280px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
-}
-.registration__title-mobile {
- @media screen and (min-width: 768px){
-   display: none;
- }
-}
+  }
+  .registration__info {
+    border-bottom: $border-light;
+    width: 100%;
+    max-width: 264px;
+    margin-right: auto;
+    margin-bottom: 8px;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      width: 122px;
+      min-height: 180px;
+      border-bottom:none;
+      border-right: $border-light;
+      margin-right: 24px;
+      margin-bottom: 0;
+      margin-left: 0; 
+      padding-right: 32px;
+      text-align: right;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+    @media screen and (min-width: 1280px) {
+      width: 160px;
+      min-height: 190px;
+      margin-right: 32px;
+      justify-content: start;
+      padding-top: 20px;
+    }
+  }
 .registration__text {
   font-weight: 500;
   font-size: 18px;
@@ -172,95 +211,18 @@ margin-bottom: 8px;
   line-height: 24px;
 }
 }
-.registration__info {
-  border-bottom: $border-light;
-  // margin-top: 82px;
-  width: 264px;
-  margin-right: auto;
-  margin-left: auto;
-  @media screen and (min-width: 768px) {
-    border-bottom:none;
-    margin-left: 50px; 
-    margin-right: 24px;
-    padding-right: 32px;
-    border-right: $border-light;
-    margin-top: 0;
-    text-align: end;
-    min-height: 180px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-  @media screen and (min-width: 1280px) {
-    height: 190px;
-    margin-right: 32px;
-    margin-left: 107px;
-    justify-content: start;
-    padding-top: 20px;
-  }
-}
-.form__paragraph {
-  color: $text-color-main;
-  margin-top: 8px;
-  margin-bottom: 20px;
-  @media screen and (min-width: 768px){
-    text-align: start;
-    width: 237px;
-    margin-top: 0;
-  }
-  @media screen and (min-width: 1280px){
-    margin-bottom: 13px;
-}}
 .registration__form {
+
   @media screen and (min-width: 768px){
     display: flex;
     align-items: center;
   }
 }
-.form__input-register {
-  border: none;
-  border-bottom: 1px solid #ab816c;
-  width: 264px;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(171, 129, 108, 0.5);
-  cursor: pointer;
-  &:not(:last-child){
-     margin-bottom:20px;
-     @media screen and (min-width: 1280px){
-      margin-bottom: 15px;
-   }
-  }
+.registration__form-item {
   @media screen and (min-width: 768px){
-     width: 237px;
+    margin-right: 54px;
   }
   @media screen and (min-width: 1280px){
-     width: 238px;
+    margin-right: 23px;
   }
-}
-.register__button {
-  margin-top: 32px;
-  @media screen and (min-width: 768px) {
-    margin-right: 60px;
-    margin-left: 55px;
-    margin-top: 0;
-  }
-  @media screen and (min-width: 1280px) {
-  margin-right: 105px;
-  margin-left: 23px;
-}
-}
-.registration__wrap {
-  // padding-top: 32px;
-  padding-bottom: 32px;
-  @media screen and (min-width: 768px) {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-  @media screen and (min-width: 1280px) {
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
 }

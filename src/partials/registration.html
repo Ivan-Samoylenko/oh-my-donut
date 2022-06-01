@@ -10,24 +10,26 @@
          <p class="registration__text">$ 699</p>
       </div>
       <form class="registration__form form">
-        <div>
-          <p class="form__paragraph">Apply your personal info
+        <div class="registration__form-item">
+          <p class="form__title form__title--registration">Apply your personal info
             for registration </p>
-            <input class="form__input-register" 
+            <input class="form__input form__input--registration" 
             type="text" 
             placeholder="Your Name" 
-            required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
+            required 
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
             title="Username must be two words separated by space." >
-            <input class="form__input-register" 
+            <input class="form__input form__input--registration" 
             type="number" 
             placeholder="Phone number" 
-            minlength="" 
-            maxlength="12"
+            pattern="[0-9]\s{5,13}"
             required >
-            <input class="form__input-register" 
+            <input class="form__input form__input--registration" 
             type="email" 
             placeholder="Email" 
-            required >
+            required 
+            pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Please enter valid email address. Format: username@hostname.tld">
          </div>
       <button class="btn-primary register__button" type="submit">Register</button>
     </form>

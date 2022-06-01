@@ -5,13 +5,13 @@
   padding-right: 8px;
 
   @media screen and (min-width: 768px) {
-    max-width: 237px;
+    max-width: 436px;
     padding-left: 0px;
     padding-right: 0px;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 238px;
+    max-width: 419px;
   }
 
   &--contact {
@@ -36,7 +36,7 @@
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    text-align: right;
+    text-align: left;
     margin-bottom: 16px;
   }
   @media screen and (min-width: 1280px) {
