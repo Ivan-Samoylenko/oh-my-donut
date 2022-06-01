@@ -1,3 +1,18 @@
+.program {
+  padding-top: 16px;
+  padding-bottom: 65px;
+
+  @media (min-width: 768px) {
+    padding-top: 77px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 22px;
+    padding-bottom: 170px;
+  }
+}
+
 .program__container {
   @media (min-width: 768px) {
     display: flex;
@@ -47,13 +62,6 @@
 
   @media (min-width: 1280px) {
     margin-bottom: 16px;
-  }
-}
-
-.programm__item {
-  @media (min-width: 1280px) {
-    font-size: 18px;
-    line-height: 1.22;
   }
 }
 
