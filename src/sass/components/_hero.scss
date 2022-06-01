@@ -9,11 +9,13 @@
     padding-top: 15.6px;
     text-align: left;
     align-items: flex-start;
+    padding-bottom: 90px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-left: 19px;
     padding-top: 42px;
+    padding-bottom: 154px;
   }
 }
 
@@ -34,6 +36,10 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 }
 
 .hero__text {
@@ -47,7 +53,6 @@
 
   max-width: 224px;
   width: 100%;
-  
 
   margin-bottom: 32px;
   color: $text-color-main;
@@ -80,10 +85,9 @@
   }
 }
 
-
-.social {
-  @media screen and (min-width:768px) {
+.social--header {
+  display: flex;
+  @media screen and (min-width: 768px) {
     justify-content: left;
-    
   }
 }
