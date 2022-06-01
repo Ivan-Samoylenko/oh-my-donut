@@ -1,51 +1,78 @@
 .form {
-    width: 100%;
-    max-width: 280px;
-    padding-left: 8px;
-    padding-right: 8px;
+  width: 100%;
+  max-width: 280px;
+  padding-left: 8px;
+  padding-right: 8px;
 
-    &--contact {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 237px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
+  @media screen and (min-width: 1280px) {
+    max-width: 238px;
+  }
+
+  &--contact {
+    padding-left: 0px;
+    padding-right: 0px;
 
     @media screen and (min-width: 768px) {
-        max-width: 237px;
-        padding-left: 0px;
-        padding-right: 0px;
-
-        &--contact {
-            max-width: 336px;
-        }
+      max-width: 336px;
     }
-
     @media screen and (min-width: 1280px) {
-        max-width: 238px;
-
-        &--contact {
-            max-width: 394px;
-        }
+      max-width: 394px;
     }
+  }
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.form__title--registration {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 13px;
+  }
 }
 
 .form__input {
-    width: 100%;
-    border: none;
-    border-bottom: $border-main;
-    display: block;
-    background-color: transparent;
-    line-height: 1.25;
+  width: 100%;
+  border: none;
+  border-bottom: $border-main;
+  display: block;
+  background-color: transparent;
+  line-height: 1.25;
 
-    &:not(:last-child) {
-        margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
 
-        @media screen and (min-width: 768px) {
-            margin-bottom: 16px;
-        }
-
-        @media screen and (min-width: 1280px) {
-            margin-bottom: 14px;
-        }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
     }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+.form__input--registration {
+  &:last-child {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
 }
