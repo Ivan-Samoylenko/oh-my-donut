@@ -6,7 +6,7 @@
     backdrop-filter: blur(4px);
     visibility: hidden;
     opacity: 0;
-    z-index: 2; 
+    z-index: 20; 
     transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -82,7 +82,7 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
-    z-index: 4;
+    z-index: 40;
     &:hover,
     &:focus {
         .icon-close-menu {
