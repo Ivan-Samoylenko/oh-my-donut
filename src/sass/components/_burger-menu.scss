@@ -5,6 +5,7 @@
     background-color: $bgc-menu;
     backdrop-filter: blur(4px);
     visibility: hidden;
+    top: 0;
     opacity: 0;
     z-index: 20; 
     transition-property: opacity, visibility;
@@ -26,6 +27,7 @@
     padding-top: 25px;
     height: 100%;
     overflow: auto;
+    position: relative;
 }
 
 .logo-menu-container {
@@ -67,6 +69,8 @@
 }
 
 .icon-close-menu {
+    width: 18px;
+    height: 18px;
     fill: $button-burger-color;
     transition-property: fill;
     transition-duration: 250ms;
@@ -77,6 +81,10 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    @media screen and (min-width: 768px){
+        top: 30px;
+        right: 35px;
+    }
     background-color: transparent;
     border: 0;
     margin: 0;
