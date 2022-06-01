@@ -13,6 +13,11 @@
     background-image: url('/src/images/svg-images/bg-top-desktop.svg');
     background-size: 100% 1035px;
   }
+
+  @media screen and (min-width: 1600px) {
+    background-image: url('/src/images/svg-images/bg-top-desktop.svg');
+    background-size: 1600px 1035px;
+  }
 }
 
 .background-bottom {
@@ -29,5 +34,10 @@
   @media screen and (min-width: 1280px) {
     background-image: url('/src/images/svg-images/bg-bottom-desktop.svg');
     background-size: 100% 2073px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    background-image: url('/src/images/svg-images/bg-bottom-desktop.svg');
+    background-size: 1600px 2073px;
   }
 }
