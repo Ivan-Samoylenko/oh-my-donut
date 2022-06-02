@@ -70,9 +70,9 @@
   }
 }
 
-.page-header-nav__link--current {
-  color: $hover-color;
-}
+// .page-header-nav__link--current {
+//   color: $hover-color;
+// }
 
 .burger-menu {
   position: absolute;
@@ -100,7 +100,7 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 0px;
+  left: -12px;
   display: block;
   width: 132px;
   height: 114px;
@@ -147,24 +147,13 @@
     }
   }
 
-  // @media screen and (min-width:1280px) {
-  //   position: absolute;
-  //   content: url('../images/desctop/donuts.png');
-  //   width: 793px;
-  //   height: 831px;
-  //   top: 0;
-  //   right: -90px;
-  //   left: 700px;
-  //   z-index: -1;
-  //   // background-repeat: no-repeat;
-  // }
 
   @media screen and (min-width: 1280px) {
     width: 795px;
     height: 661px;
     top: 0;
     // right: -150px;
-    left: 620px;
+    left: 564px;
     background-image: url('../images/desktop/donuts.png');
     background-size: 795px 661px;
 
