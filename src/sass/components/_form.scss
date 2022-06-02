@@ -1,13 +1,8 @@
 .form {
   width: 100%;
   max-width: 280px;
-  padding-left: 8px;
-  padding-right: 8px;
-
   @media screen and (min-width: 768px) {
     max-width: 436px;
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -15,9 +10,6 @@
   }
 
   &--contact {
-    padding-left: 0px;
-    padding-right: 0px;
-
     @media screen and (min-width: 768px) {
       max-width: 336px;
     }
@@ -46,27 +38,22 @@
 
 .form__input {
   width: 100%;
+  margin-bottom: 20px;
   border: none;
   border-bottom: $border-main;
+  padding-bottom: 1px;
   display: block;
   background-color: transparent;
   line-height: 1.25;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-
     @media screen and (min-width: 768px) {
       margin-bottom: 16px;
     }
-
     @media screen and (min-width: 1280px) {
       margin-bottom: 15px;
     }
-  }
-
-  &:last-child {
-    margin-bottom: 32px;
-  }
+    &:last-child {
+      margin-bottom: 32px;
+    }
 }
 
 .form__input--registration {
