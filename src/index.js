@@ -137,3 +137,12 @@ if (burgerMenuClose){
         return false;
     }
 }
+
+let links = document.querySelectorAll('.nav__link');
+let linkOnclick = function(){ 
+    document.querySelector(".menu-wrapper").classList.toggle("opened"); 
+    return true; 
+}
+for (let i = 0; i < links.length; i++){
+    links[i].onclick = linkOnclick;
+}
