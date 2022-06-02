@@ -1,7 +1,12 @@
 .reviews {
     padding-top: 0px;
+    padding-bottom: 16px;
+    @media screen and (min-width: 768px) and (min-width: 1280px-1px){
+        padding-bottom: 0px;
+    }
     @media screen and (min-width: 1280px){
         padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 
@@ -138,7 +143,7 @@
     margin-top: 8px;
     font-size: 16px;
     line-height: calc(20 / 16);
-    height: 160px;
+    height: 250px;
     overflow: auto;
     @media screen and (min-width: 1280px){
         margin-top: 20px;
