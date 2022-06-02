@@ -6,14 +6,13 @@
   align-items: center;
 
   @media screen and (min-width: 768px) {
-    padding-top: 15.6px;
+    padding-top: 16px;
     text-align: left;
     align-items: flex-start;
     padding-bottom: 90px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-left: 19px;
     padding-top: 42px;
     padding-bottom: 154px;
   }
@@ -39,6 +38,10 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 16px;
+    font-size: 64px;
+    line-height: 1;
+    max-width: 490px;
+    max-height: 130px;
   }
 }
 
@@ -64,6 +67,8 @@
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
+    font-size: 24px;
+    max-width: 254px;
   }
 }
 
@@ -82,6 +87,9 @@
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
+    max-width: 158px;
+    font-size: 24px;
+    line-height: 1.25;
   }
 }
 
