@@ -138,7 +138,7 @@ if (burgerMenuClose){
     }
 }
 
-let links = document.querySelectorAll('.nav__link, .page-header-nav__link');
+let links = document.querySelectorAll('.nav__link');
 let linkOnclick = function(){ 
     document.querySelector(".menu-wrapper").classList.toggle("opened"); 
     return true; 
