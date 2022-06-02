@@ -1,26 +1,33 @@
 .registration {
   z-index: 1;
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   @media screen and (min-width: 768px){
-    padding-bottom: 97px;
-    padding-top: 97px;
+    padding-top: 40px;
+    padding-bottom: 78px;
+  }
+  @media screen and (min-width: 1280px){
+    padding-top: 60px;
+    padding-bottom: 160px;
   }
 }
 .registration__title {
+  margin-bottom: 20px;
   font-family: 'Caveat Brush';
   font-size: 24px;
-  line-height: 65px;
+  line-height: 1.25;
   color: $text-color-main;
   text-align: center;
-  font-weight: 400;
   @media screen and (min-width: 768px){
-  margin-bottom: 8px;
+    height: 65px;
+    margin-bottom: 8px;
+    line-height: 2.71;
   }
   @media screen and (min-width: 1280px){
     margin-bottom: 16px;
     font-size: 36px;
+    line-height: 1.8;
   }
   }
   .registration__title-desktop {
@@ -43,11 +50,12 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  padding: 32px 8px;
   flex-direction: column;
   text-align:center;
-  // overflow: hidden;
   @media screen and (min-width: 768px) {
     width: 704px;
+    padding: 40px 60px;
     border-radius: 150px;
     &::before {
       position: absolute;
@@ -100,6 +108,7 @@
   }
   @media screen and (min-width: 1280px) {
     width: 822px;
+    padding: 35px 105px;
     &::before {
       position: absolute;
       top: -69px;
@@ -151,17 +160,10 @@
   }
   }
   .registration__wrap {
-    padding-bottom: 32px;
     @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-    @media screen and (min-width: 1280px) {
-    padding-top: 35px;
-    padding-bottom: 35px;
   }
   }
   .registration__info {
