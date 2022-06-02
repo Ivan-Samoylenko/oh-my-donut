@@ -11,14 +11,14 @@
   @media screen and (min-width: 768px) {
     background-image: url('/src/images/svg-images/bg-top-tablet.svg'),
       url('/src/images/svg-images/bg-bottom-tablet.svg');
-    background-size: 100% 622px, 100% 1519px;
+    background-size: 100% 622px, 100% 1255px;
     background-position: top 0 left 50%, bottom 249px left 50%;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url('/src/images/svg-images/bg-top-desktop.svg'),
       url('/src/images/svg-images/bg-bottom-desktop.svg');
-    background-size: 100% 1035px, 100% 2073px;
+    background-size: 100% 1035px, 100% 1861px;
     background-position: top 0 left 50%, bottom 0 left 50%;
   }
 
