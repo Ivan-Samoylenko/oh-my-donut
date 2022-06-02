@@ -49,59 +49,161 @@
 }
 
 .event__item--donut1::before {
-  content: url(../images/mobile/donut-1.png);
+  content: '';
+  display: block;
   position: absolute;
   left: 50%;
   top: 0%;
-
+  background-image: url(../images/mobile/donut-1.png);
+  background-size: 77px 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 77px;
+  height: 80px;
   transform: translate(-50%, -50%);
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(../images/mobile/donut-1@2x.png);
+  }
+
   @media (min-width: 768px) {
-    content: url(../images/tablet/donut-1.png);
+    background-size: 82px 91px;
+    width: 82px;
+    height: 91px;
+    background-image: url(../images/tablet/donut-1.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/tablet/donut-1@2x.png);
+    }
   }
   @media (min-width: 1280px) {
-    content: url(../images/desktop/donut-1.png);
+    background-size: 97px 107px;
+    width: 97px;
+    height: 107px;
+    background-image: url(../images/desktop/donut-1.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/desktop/donut-1@2x.png);
+    }
   }
 }
+
 .event__item--donut2::before {
-  content: url(../images/mobile/donut-2.png);
+  content: '';
+  display: block;
   position: absolute;
   left: 50%;
   top: 0%;
-
+  background-image: url(../images/mobile/donut-2.png);
+  background-size: 75px 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75px;
+  height: 80px;
   transform: translate(-50%, -50%);
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(../images/mobile/donut-2@2x.png);
+  }
+
   @media (min-width: 768px) {
-    content: url(../images/tablet/donut-2.png);
+    background-size: 69px 77px;
+    width: 69px;
+    height: 77px;
+    background-image: url(../images/tablet/donut-2.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/tablet/donut-2@2x.png);
+    }
   }
   @media (min-width: 1280px) {
-    content: url(../images/desktop/donut-2.png);
+    background-size: 83px 92px;
+    width: 83px;
+    height: 92px;
+    background-image: url(../images/desktop/donut-2.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/desktop/donut-2@2x.png);
+    }
   }
 }
+
 .event__item--donut3::before {
-  content: url(../images/mobile/donut-3.png);
+  content: '';
+  display: block;
   position: absolute;
   left: 50%;
   top: 0%;
-
+  background-image: url(../images/mobile/donut-2.png);
+  background-size: 78px 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 78px;
+  height: 80px;
   transform: translate(-50%, -50%);
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(../images/mobile/donut-3@2x.png);
+  }
+
   @media (min-width: 768px) {
-    content: url(../images/tablet/donut-3.png);
+    background-size: 74px 82px;
+    width: 74px;
+    height: 82px;
+    background-image: url(../images/tablet/donut-3.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/tablet/donut-3@2x.png);
+    }
   }
   @media (min-width: 1280px) {
-    content: url(../images/desktop/donut-3.png);
+    background-size: 88px 97px;
+    width: 88px;
+    height: 97px;
+    background-image: url(../images/desktop/donut-3.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/desktop/donut-3@2x.png);
+    }
   }
 }
 .event__item--donut4::before {
-  content: url(../images/mobile/donut-4.png);
+  content: '';
+  display: block;
   position: absolute;
   left: 50%;
   top: 0%;
-
+  background-image: url(../images/mobile/donut-4.png);
+  background-size: 74px 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 74px;
+  height: 80px;
   transform: translate(-50%, -50%);
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url(../images/mobile/donut-4@2x.png);
+  }
+
   @media (min-width: 768px) {
-    content: url(../images/tablet/donut-4.png);
+    background-size: 70px 78px;
+    width: 70px;
+    height: 78px;
+    background-image: url(../images/tablet/donut-4.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/tablet/donut-4@2x.png);
+    }
   }
   @media (min-width: 1280px) {
-    content: url(../images/desktop/donut-4.png);
+    background-size: 83px 92px;
+    width: 83px;
+    height: 92px;
+    background-image: url(../images/desktop/donut-4.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(../images/desktop/donut-4@2x.png);
+    }
   }
 }
 
