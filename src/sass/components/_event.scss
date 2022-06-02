@@ -62,8 +62,17 @@
   height: 80px;
   transform: translate(-50%, -50%);
 
+  // For retina 2x
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url(../images/mobile/donut-1@2x.png);
+  }
+
+  // For retina 3x
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/donut-1@3x.png);
   }
 
   @media (min-width: 768px) {
@@ -72,8 +81,16 @@
     height: 91px;
     background-image: url(../images/tablet/donut-1.png);
 
+    // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(../images/tablet/donut-1@2x.png);
+    }
+    // For retina 3x
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/tablet/donut-1@3x.png);
     }
   }
   @media (min-width: 1280px) {
@@ -82,8 +99,16 @@
     height: 107px;
     background-image: url(../images/desktop/donut-1.png);
 
+    // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(../images/desktop/donut-1@2x.png);
+    }
+    // For retina 3x
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/desktop/donut-1@3x.png);
     }
   }
 }
@@ -102,8 +127,16 @@
   height: 80px;
   transform: translate(-50%, -50%);
 
+  // For retina 2x
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url(../images/mobile/donut-2@2x.png);
+  }
+  // For retina 3x
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/donut-2@3x.png);
   }
 
   @media (min-width: 768px) {
@@ -112,18 +145,35 @@
     height: 77px;
     background-image: url(../images/tablet/donut-2.png);
 
+    // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(../images/tablet/donut-2@2x.png);
     }
+    // For retina 3x
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/tablet/donut-2@3x.png);
+    }
   }
+
   @media (min-width: 1280px) {
     background-size: 83px 92px;
     width: 83px;
     height: 92px;
     background-image: url(../images/desktop/donut-2.png);
 
+    // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(../images/desktop/donut-2@2x.png);
+    }
+    // For retina 3x
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/desktop/donut-2@3x.png);
     }
   }
 }
@@ -142,8 +192,17 @@
   height: 80px;
   transform: translate(-50%, -50%);
 
+  // For retina 2x
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url(../images/mobile/donut-3@2x.png);
+  }
+
+  // For retina 3x
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/donut-3@3x.png);
   }
 
   @media (min-width: 768px) {
@@ -151,9 +210,16 @@
     width: 74px;
     height: 82px;
     background-image: url(../images/tablet/donut-3.png);
-
+    // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(../images/tablet/donut-3@2x.png);
+    }
+    // For retina 3x
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/tablet/donut-3@3x.png);
     }
   }
   @media (min-width: 1280px) {
@@ -161,9 +227,16 @@
     width: 88px;
     height: 97px;
     background-image: url(../images/desktop/donut-3.png);
-
+    // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(../images/desktop/donut-3@2x.png);
+    }
+    // For retina 3x
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/desktop/donut-3@3x.png);
     }
   }
 }
@@ -181,8 +254,16 @@
   height: 80px;
   transform: translate(-50%, -50%);
 
+  // For retina 2x
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url(../images/mobile/donut-4@2x.png);
+  }
+  // For retina 3x
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/donut-4@3x.png);
   }
 
   @media (min-width: 768px) {
@@ -191,8 +272,16 @@
     height: 78px;
     background-image: url(../images/tablet/donut-4.png);
 
+    // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(../images/tablet/donut-4@2x.png);
+    }
+    // For retina 3x
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/tablet/donut-4@3x.png);
     }
   }
   @media (min-width: 1280px) {
@@ -201,9 +290,17 @@
     height: 92px;
     background-image: url(../images/desktop/donut-4.png);
 
+    // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(../images/desktop/donut-4@2x.png);
     }
+  }
+  // For retina 3x
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/desktop/donut-4@3x.png);
   }
 }
 

@@ -65,11 +65,11 @@
   }
 }
 
-.program__text-more {
-  //   display: none;
-
+.program__ckeckbox:checked ~ .program__text-more {
   margin-top: 8px;
+}
 
+.program__text-more {
   @media (min-width: 1280px) {
     display: block;
     margin-top: 16px;
