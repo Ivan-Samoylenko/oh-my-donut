@@ -41,11 +41,13 @@
   margin-bottom: 20px;
   border: none;
   border-bottom: $border-main;
-  padding-bottom: 1px;
+  border-radius: 3px;
+  padding: 0 6px 1px;
   display: block;
   background-color: transparent;
   line-height: 1.25;
   font-size: 16px;
+  outline: none;
     @media screen and (min-width: 768px) {
       margin-bottom: 16px;
     }
@@ -55,9 +57,12 @@
     &::placeholder {
       color: $text-color-placeholder;
     }
-    &:not(:placeholder-shown):required:invalid {
-      border-color: red;
-      color: red;
+    &:not(:placeholder-shown):not(:focus):required:invalid {
+      border-color: $invalid-input-color;
+      color: $invalid-input-color;
+    }
+    &:focus-within {
+      box-shadow: 0 0 1px 3px $bgc-main, 0 0 1px 5px $button-main-bgc;
     }
 }
 
