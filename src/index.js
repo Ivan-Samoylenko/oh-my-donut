@@ -3,10 +3,7 @@ window.data = [
 {
         stars: 5,
         name: 'Will',
-        review: `Last time I have visited a cooking course by Eva 
-I was impressed with the way she explained everything
-to people. You can be sure you will manage to cook a delicious dish even if it is your first time in the kitchen!
-Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!`
+        review: 'Last time I have visited a cooking course by Eva I was impressed with the way she explained everything to people. You can be sure you will manage to cook a delicious dish even if it is your first time in the kitchen! Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!'
     },
     {
         stars: 5,

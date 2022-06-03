@@ -1,4 +1,4 @@
-<section class="contact-section">
+<section class="contact-section" id="contacts">
   <h2 class="contact-section__header">Contact</h2>
   <form class="contact-section__form form form--contact">
     <p class="form__title">We will answer any question!</p>
@@ -10,15 +10,19 @@
         required
         pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         title="Please enter valid email address. Format: username@hostname.tld"
+        value=""
+        onkeyup="this.setAttribute('value', this.value);"
       />
       <input
         type="text"
-        class="form__input"
+        class="form__input form__input--contact"
         name="question"
         placeholder="Type your question"
         required
         pattern="[A-Za-z0-9\s§&!?=()]{1,400}"
         title="Please provide all questions using Latin letters"
+        value=""
+        onkeyup="this.setAttribute('value', this.value);"
       />
     <button class="btn-primary contact-section__btn" type="submit">Send</button>
   </form>

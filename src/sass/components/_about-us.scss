@@ -1,12 +1,22 @@
+.section-about-us {
+  @media screen and (min-width: 768px) {
+    padding-top: 45px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 77px;
+  }
+}
+
 .section-about-us__container {
   position: relative;
-  padding-top: 316px;
+  padding-top: 320px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: end;
     padding-top: 0;
-    height: 355px;
+    //height: 355px;
+    padding-bottom: 44px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -44,7 +54,8 @@
 
   @media screen and (min-width: 768px) {
     background-image: url('/src/images/tablet/coffee-donuts.png');
-    left: 25px;
+    left: 32px;
+    top: -21px;
     width: 336px;
     height: 359px;
 
@@ -62,6 +73,7 @@
   }
   @media screen and (min-width: 1280px) {
     left: 122px;
+    top: -43px;
     width: 502px;
     height: 536px;
     background-image: url('/src/images/tablet/coffee-donuts.png');
@@ -84,12 +96,12 @@
   @media screen and (min-width: 1280px) {
     content: '';
     position: absolute;
-    top: -14%;
-    left: -8%;
-    width: 249px;
-    height: 412px;
+    top: -114px;
+    left: -117px;
+    width: 264px;
+    height: 450px;
     background-repeat: no-repeat;
-    background-size: 249px 412px;
+    background-size: 264px 450px;
     background-image: url('/src/images/desktop/spoon.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -106,17 +118,6 @@
   }
 }
 
-.section-about-us__info-block {
-  @media screen and (min-width: 768px) {
-    width: calc(100% / 2);
-    margin-left: 23px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 374px;
-    margin-left: 140px;
-    justify-content: space-between;
-  }
-}
 .section-about-us__heading {
   font-family: 'Caveat Brush', sans-serif;
   color: $text-color-main;
@@ -127,15 +128,26 @@
 
   @media screen and (min-width: 768px) {
     text-align: left;
+    margin-bottom: 16px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 36px;
     line-height: 1.81;
+    margin-bottom: 10px;
+  }
+}
+.section-about-us__text {
+  @media screen and (min-width: 768px) {
+    max-width: 336px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 389px;
   }
 }
 .section-about-us__text:not(:last-of-type) {
   margin-bottom: 20px;
 }
+
 
 .hidden-text:checked ~ .btn-secondary .btn-secondary__margin--less {
   margin-top: 16px;

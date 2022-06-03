@@ -45,21 +45,28 @@
   display: block;
   background-color: transparent;
   line-height: 1.25;
+  font-size: 16px;
     @media screen and (min-width: 768px) {
       margin-bottom: 16px;
     }
     @media screen and (min-width: 1280px) {
       margin-bottom: 15px;
     }
-    &:last-child {
-      margin-bottom: 32px;
+    &::placeholder {
+      color: $text-color-placeholder;
+    }
+    &:not(:placeholder-shown):required:invalid {
+      border-color: red;
+      color: red;
     }
 }
 
 .form__input--registration {
-  &:last-child {
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
     }
-  }
+}
+
+.form__input--contact {
+  margin-bottom: 32px;
 }

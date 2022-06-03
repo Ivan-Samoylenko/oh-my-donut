@@ -14,15 +14,24 @@
     display: none;
 }
 
+.reviews__header{
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px){
+        margin-bottom: -16px;
+    }
+    @media screen and (min-width: 1280px){
+        margin-bottom: 36px;
+    }
+}
+
 .reviews__title {
     font-family: 'Caveat Brush';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: calc(35 / 24);
-    margin-bottom: 12px;
     @media screen and (min-width: 768px) and (max-width: 1280px-1px){
-        margin-bottom: 35px;
+        margin-bottom: 0px;
     }
     @media screen and (min-width: 1280px){
         font-size: 36px;
@@ -104,7 +113,10 @@
 .reviews__main {
     margin: 0;
     @media screen and (min-width: 768px ){
-        margin-top: -188px;
+        margin-top: -135px;
+    }
+    @media screen and (min-width: 1280px ){
+        margin-top: -206px;
     }
 }
 
@@ -118,6 +130,8 @@
 }
 
 .reviews__article-title {
+    margin: 0;
+    padding: 0;
     font-style: italic;
     font-size: 14px;
     line-height: calc(17 / 14);
@@ -143,7 +157,7 @@
     margin-top: 8px;
     font-size: 16px;
     line-height: calc(20 / 16);
-    height: 250px;
+    height: 220px;
     overflow: auto;
     @media screen and (min-width: 1280px){
         margin-top: 20px;
