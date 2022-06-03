@@ -7,9 +7,11 @@
 
   @media (min-width: 768px) {
     gap: 50px 33px;
+    grid-template-columns: 152px 152px;
   }
   @media (min-width: 1280px) {
     gap: 80px 140px;
+    grid-template-columns: 180px 180px;
   }
 }
 .event__item {
@@ -53,14 +55,14 @@
   display: block;
   position: absolute;
   left: 50%;
-  top: 0%;
+  top: -35px;
   background-image: url(../images/mobile/donut-1.png);
   background-size: 77px 80px;
   background-repeat: no-repeat;
   background-position: center;
   width: 77px;
   height: 80px;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 
   // For retina 2x
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -80,6 +82,7 @@
     width: 82px;
     height: 91px;
     background-image: url(../images/tablet/donut-1.png);
+    top: -36px;
 
     // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -98,7 +101,7 @@
     width: 97px;
     height: 107px;
     background-image: url(../images/desktop/donut-1.png);
-
+    top: -43px;
     // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url(../images/desktop/donut-1@2x.png);
@@ -118,14 +121,14 @@
   display: block;
   position: absolute;
   left: 50%;
-  top: 0%;
+  top: -35px;
   background-image: url(../images/mobile/donut-2.png);
   background-size: 75px 80px;
   background-repeat: no-repeat;
   background-position: center;
   width: 75px;
   height: 80px;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 
   // For retina 2x
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -143,6 +146,7 @@
     background-size: 69px 77px;
     width: 69px;
     height: 77px;
+    top: -36px;
     background-image: url(../images/tablet/donut-2.png);
 
     // For retina 2x
@@ -162,6 +166,7 @@
     background-size: 83px 92px;
     width: 83px;
     height: 92px;
+    top: -43px;
     background-image: url(../images/desktop/donut-2.png);
 
     // For retina 2x
@@ -183,14 +188,14 @@
   display: block;
   position: absolute;
   left: 50%;
-  top: 0%;
+  top: -35px;
   background-image: url(../images/mobile/donut-2.png);
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-position: center;
   width: 78px;
   height: 80px;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 
   // For retina 2x
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -209,6 +214,7 @@
     background-size: 74px 82px;
     width: 74px;
     height: 82px;
+    top: -36px;
     background-image: url(../images/tablet/donut-3.png);
     // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -226,6 +232,7 @@
     background-size: 88px 97px;
     width: 88px;
     height: 97px;
+    top: -43px;
     background-image: url(../images/desktop/donut-3.png);
     // For retina 2x
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -245,14 +252,14 @@
   display: block;
   position: absolute;
   left: 50%;
-  top: 0%;
+  top: -35px;
   background-image: url(../images/mobile/donut-4.png);
   background-size: 74px 80px;
   background-repeat: no-repeat;
   background-position: center;
   width: 74px;
   height: 80px;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 
   // For retina 2x
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -270,6 +277,7 @@
     background-size: 70px 78px;
     width: 70px;
     height: 78px;
+    top: -36px;
     background-image: url(../images/tablet/donut-4.png);
 
     // For retina 2x
@@ -288,6 +296,7 @@
     background-size: 83px 92px;
     width: 83px;
     height: 92px;
+    top: -43px;
     background-image: url(../images/desktop/donut-4.png);
 
     // For retina 2x

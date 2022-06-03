@@ -221,8 +221,10 @@
   }
 }
 .registration__form-item {
+  margin-bottom: 32px;
   @media screen and (min-width: 768px){
     margin-right: 54px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1280px){
     margin-right: 23px;

@@ -1,12 +1,11 @@
 .page-footer {
-  padding-top: 32px;
+  padding-top: 16px;
 
   padding-bottom: 20px;
-  overflow: hidden;
   &__social {
     margin-bottom: 32px;
     @media (min-width: 768px) {
-      margin-bottom: 59px;
+      margin-bottom: 60px;
     }
     @media (min-width: 1280px) {
       margin-bottom: 80px;

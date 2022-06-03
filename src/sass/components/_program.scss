@@ -1,9 +1,9 @@
 .program {
   padding-top: 16px;
-  padding-bottom: 65px;
+  padding-bottom: 51px;
 
   @media (min-width: 768px) {
-    padding-top: 77px;
+    padding-top: 44px;
     padding-bottom: 76px;
   }
 
@@ -29,6 +29,14 @@
     width: 392px;
   }
 }
+
+.program__section--event {
+
+  @media (min-width: 1280px) {
+    padding-top: 43px;
+  }
+}
+
 .program__title {
   margin-bottom: 8px;
 
@@ -55,6 +63,13 @@
     font-size: 18px;
     line-height: 1.22;
   }
+}
+
+.programm__item {
+  @media (min-width: 768px) {
+    min-height: 22px;
+  }
+  
 }
 
 .programm__item:not(:last-child) {
